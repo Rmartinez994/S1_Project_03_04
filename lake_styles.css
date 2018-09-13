@@ -12,6 +12,7 @@
         url('DobkinPlain.ttf') format('truetype');
 }
 
+/* What these lines of code do is set the fonts for the webpage. */
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -33,9 +34,18 @@ body {
     background-color: blanchedalmond;
 }
 
+header {
+    padding-bottom: 15px;
+}
+
+/* What this code does is set the background color for the webpage and body paragraphs, but also push the header down 15px. */
 section#rightcol {
     background-color: peachpuff;
     padding-bottom: 10px;
+}
+
+section#leftcol {
+    border: 3px solid black;
 }
 
 section#leftcol>h1 {
@@ -52,11 +62,110 @@ section#leftcol>p {
     text-indent: 0.8em;
 }
 
+/* What this code does is it gives the welcome a font but also changes its color. And then the codes adds a border around the body paragraph. */
 aside :first-of-type {
     background-color: burlywood;
     line-height: 1.5em;
 }
 
 aside :last-of-type {
-    background-color:
+    background-color: burlywood;
+    padding-left: 5px;
+}
+
+aside :last-of-type h2 {
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+aside:last-of-type p {
+    padding-left: 10px;
+    font-size: 0.9em
+}
+
+aside h1 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+section#rightcol h2 {
+    font-family: Dobkin;
+    font-size: 2em;
+    text-indent: 0.9em;
+}
+
+/* What these lines of code do is put a font to the titles of the aside tag but also align the text and change the font size.   */
+header>nav a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10px;
+    padding-block-end: 10px;
+}
+
+header>nav a:link,
+header>nav a:visited {
+    background-color: tan;
+}
+
+header>nav a:hover,
+header>nav a:active {
+    background-color: peachpuff;
+}
+
+/* What these lines of code do is make the header background color tan, but also make it when you over the hyperlinks it changes color to peachpuff  */
+
+section#rightcol {
+    border: 3px solid black;
+}
+
+section#rightcol nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+section#rightcol nav ul li {
+    text-align: left;
+}
+
+section#rightcol nav ul a {
+    text-decoration: none;
+}
+
+section#rightcol nav ul a:link,
+section#rightcol nav ul a:visited {
+    color: black;
+}
+
+section#rightcol nav ul a:hover,
+section#rightcol nav ul a:active {
+    color: brown;
+}
+
+/* What these lines of code do is make the side bar text align to  the left, but also made it when you hover over the hyperlinks the text will change to brown. */
+blockquote {
+    padding-top: 20px;
+    color: brown;
+    font-size: 0.95em;
+    line-height: 1.3em;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 1.8em;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 1.8em;
+}
+
+footer {
+    background-color: peachpuff;
+    text-align: center;
+}
+
+/* What these lines of code do is make the quote a diffent color and adds quotation marks.  */
+img {
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
 }
